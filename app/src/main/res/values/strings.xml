@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">java retrofit mvvm</string>
+    <string name="pos">Pos</string>
+    <string name="contoh_mvvm_autocomplete">Contoh MVVM Autocomplete</string>
+    <string name="contoh_mvvm_recycleview">Contoh MVVM Recycleview</string>
+</resources>
