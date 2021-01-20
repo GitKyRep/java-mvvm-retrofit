@@ -19,8 +19,13 @@ public class MainMenuActivity extends AppCompatActivity {
         }
 
         mainMenu.btnAutocomplete.setOnClickListener(v -> {
-            Intent mvvmAutocomplete = new Intent(MainMenuActivity.this, MainActivity.class);
+            Intent mvvmAutocomplete = new Intent(MainMenuActivity.this, AutoCompleteActivity.class);
             startActivity(mvvmAutocomplete);
+        });
+
+        mainMenu.btnRecycleview.setOnClickListener(v -> {
+            Intent mvvmRecycleview = new Intent(MainMenuActivity.this, RecycleviewActivity.class);
+            startActivity(mvvmRecycleview);
         });
     }
 }

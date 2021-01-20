@@ -3,4 +3,6 @@
     <string name="pos">Pos</string>
     <string name="contoh_mvvm_autocomplete">Contoh MVVM Autocomplete</string>
     <string name="contoh_mvvm_recycleview">Contoh MVVM Recycleview</string>
+    <string name="koordinat">Koordinat</string>
+    <string name="data_not_available">Data tidak tersedia</string>
 </resources>

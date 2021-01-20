@@ -8,20 +8,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.rizkysaraan.javaretrofitmvvm.R;
-import com.rizkysaraan.javaretrofitmvvm.databinding.ActivityMainBinding;
+import com.rizkysaraan.javaretrofitmvvm.databinding.ActivityAutocompleteBinding;
 import com.rizkysaraan.javaretrofitmvvm.model.Pos;
 import com.rizkysaraan.javaretrofitmvvm.viewmodel.MainViewModel;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class AutoCompleteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityMainBinding activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(activityMainBinding.getRoot());
+        ActivityAutocompleteBinding activityAutocompleteBinding = ActivityAutocompleteBinding.inflate(getLayoutInflater());
+        setContentView(activityAutocompleteBinding.getRoot());
 
         MainViewModel mainViewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 listPos.add(pos.getStore_koordinat_name());
             }
 
-            activityMainBinding.acPos.setAdapter(new ArrayAdapter<>(this, R.layout.list_item, listPos));
-            activityMainBinding.acPos.setOnItemClickListener((parent, view, position, id) -> {
+            activityAutocompleteBinding.acPos.setAdapter(new ArrayAdapter<>(this, R.layout.item_autocomplete, listPos));
+            activityAutocompleteBinding.acPos.setOnItemClickListener((parent, view, position, id) -> {
                 Toast.makeText(this, "tes " + dataPos.get(position).getStore_koordinat_id(), Toast.LENGTH_SHORT).show();
             });
 
