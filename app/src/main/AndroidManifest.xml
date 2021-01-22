@@ -14,16 +14,17 @@
         android:theme="@style/Theme.JavaRetrofitMvvm"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity
-            android:name=".view.activity.RecycleviewActivity"
-            android:parentActivityName=".view.activity.MainMenuActivity" />
-        <activity android:name=".view.activity.MainMenuActivity">
+        <activity android:name=".view.activity.LoginActivity" android:theme="@style/Theme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.activity.RecycleviewActivity"
+            android:parentActivityName=".view.activity.MainMenuActivity" />
+        <activity android:name=".view.activity.MainMenuActivity" />
         <activity
             android:name=".view.activity.AutoCompleteActivity"
             android:parentActivityName=".view.activity.MainMenuActivity" />

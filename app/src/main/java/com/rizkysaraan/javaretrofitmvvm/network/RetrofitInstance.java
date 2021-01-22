@@ -13,7 +13,7 @@ public class RetrofitInstance {
                 .addInterceptor(loggingInterceptor)
                 .build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.43.210/ngabsen_gua_api/index.php/")
+                .baseUrl("http://192.168.43.7/ngabsen_gua_api/index.php/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

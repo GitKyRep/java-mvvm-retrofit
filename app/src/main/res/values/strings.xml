@@ -5,4 +5,10 @@
     <string name="contoh_mvvm_recycleview">Contoh MVVM Recycleview</string>
     <string name="koordinat">Koordinat</string>
     <string name="data_not_available">Data tidak tersedia</string>
+    <string name="signin">Signin</string>
+    <string name="nip">Nip</string>
+    <string name="password">Password</string>
+    <string name="information">Informasi</string>
+    <string name="close">Tutup</string>
+    <string name="ok">Ok</string>
 </resources>
